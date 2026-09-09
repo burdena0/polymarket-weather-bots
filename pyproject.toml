@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polymarket-weather-bots"
+version = "0.1.0"
+description = "Polymarket US weather strategies with shared execution accounting and forecast review"
+requires-python = ">=3.10"
+dependencies = ["PyNaCl>=1.5", "tzdata>=2024.1"]
+
+[tool.setuptools.packages.find]
+include = ["supahtrade*"]
+
+[tool.setuptools.package-data]
+supahtrade = ["static/*.html"]
